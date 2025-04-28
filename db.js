@@ -1,7 +1,8 @@
 const mysql = require('mysql2');
+require('dotenv').config();
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: process.env.DB_HOST || 'localhost',
   user: 'root',
   password: '',
   database: 'holiday_management' // ✅ Corrected name here

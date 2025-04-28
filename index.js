@@ -122,6 +122,7 @@ const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const app = express();
 const PORT = 5000;
